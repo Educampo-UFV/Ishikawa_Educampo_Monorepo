@@ -1,0 +1,9 @@
+[submodule "API_Ishikawa_Educampo"]
+	path = API_Ishikawa_Educampo
+	url = https://github.com/Educampo-UFV/API_Ishikawa_Educampo.git
+[submodule "API_LLM_Router"]
+	path = API_LLM_Router
+	url = https://github.com/Educampo-UFV/API_LLM_Router.git
+[submodule "Site_Ishikawa_Educampo"]
+	path = Site_Ishikawa_Educampo
+	url = https://github.com/Educampo-UFV/Site_Ishikawa_Educampo.git

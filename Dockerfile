@@ -40,7 +40,10 @@ RUN npm install
 ENV ENCRYPTION_SECRET_KEY="dummy_key_for_build_only_32_chars_long_"
 ENV ADMIN_USERNAME="admin"
 ENV ADMIN_PASSWORD="password"
-ENV NEXT_PUBLIC_ENABLE_TEST_FARMS="true"
+
+# Usamos ARG para permitir que o painel do Render injete o valor real no momento do build
+ARG NEXT_PUBLIC_ENABLE_TEST_FARMS="true"
+ENV NEXT_PUBLIC_ENABLE_TEST_FARMS=$NEXT_PUBLIC_ENABLE_TEST_FARMS
 
 RUN npm run build
 

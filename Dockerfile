@@ -5,12 +5,21 @@ FROM python:3.11-slim
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# Instala dependências do sistema: Redis, Supervisor, curl para o Node.js e dependências de build
-RUN apt-get update && apt-get install -y \
+# Instala dependências do sistema: Redis, Supervisor, curl para Node.js, build tools e libs gráficas para WeasyPrint (PDF)
+RUN apt-get update && apt-get install -y --no-install-recommends \
     redis-server \
     supervisor \
     curl \
     build-essential \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libgdk-pixbuf-2.0-0 \
+    libglib2.0-0 \
+    libcairo2 \
+    libffi-dev \
+    shared-mime-info \
+    fonts-liberation \
+    fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
 
 # Instala Node.js (v20)

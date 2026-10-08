@@ -46,6 +46,8 @@ WORKDIR /app/DB_API_Ishikawa
 RUN pip install --no-cache-dir -r requirements.txt
 
 
+
+
 # Instala as dependências e faz o build do Site_Ishikawa_Educampo (Next.js)
 WORKDIR /app/Site_Ishikawa_Educampo
 RUN npm install

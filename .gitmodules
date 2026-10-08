@@ -7,3 +7,6 @@
 [submodule "Site_Ishikawa_Educampo"]
 	path = Site_Ishikawa_Educampo
 	url = https://github.com/Educampo-UFV/Site_Ishikawa_Educampo.git
+[submodule "DB_API_Ishikawa"]
+	path = DB_API_Ishikawa
+	url = https://github.com/MarcosVeniciu/DB_API_Ishikawa.git
